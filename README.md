@@ -97,6 +97,3 @@ Quitting the Game
 You can choose to quit the game at any time by entering 0. Your earnings at that point will be your final prize.
 
 Enjoy testing your general knowledge with this quiz game!
-
-Note: This game is for entertainment purposes and is not meant for real monetary transactions.*
-
