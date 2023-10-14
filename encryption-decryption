@@ -1,0 +1,63 @@
+
+import random
+import string
+
+# Generate two sets of 3 random characters each
+random1 = ''.join(random.choice(string.ascii_letters) for _ in range(3))
+random2 = ''.join(random.choice(string.ascii_letters) for _ in range(3))
+
+
+# Function to encrypt a message
+def code(message):
+  wordsOfSentence = message.split(" ")
+  sentenceSplit = []
+
+  for i in range(len(wordsOfSentence)):
+    if len(wordsOfSentence[i]) == 1:
+      # Keep single characters as they are
+      sentenceSplit.append(wordsOfSentence[i])
+    elif len(wordsOfSentence[i]) == 2:
+      # Swap the positions of characters in two-character words
+      modifiedWord = wordsOfSentence[i][1] + wordsOfSentence[i][0]
+      sentenceSplit.append(modifiedWord)
+    elif len(wordsOfSentence[i]) > 2:
+      # Encrypt longer words with random characters at the start and end
+      modifiedWord = random1 + (wordsOfSentence[i][1:] +
+                                wordsOfSentence[i][0]) + random2
+      sentenceSplit.append(modifiedWord)
+
+  encryptedSentence = " ".join(sentenceSplit)
+  return encryptedSentence
+
+
+# Function to decrypt a message
+def decode(message):
+  wordsOfSentence = message.split(" ")
+  sentenceSplit = []
+
+  for i in range(len(wordsOfSentence)):
+    if len(wordsOfSentence[i]) == 1:
+      # Keep single characters as they are
+      sentenceSplit.append(wordsOfSentence[i])
+    elif len(wordsOfSentence[i]) == 2:
+      # Swap the positions of characters in two-character words
+      modifiedWord = wordsOfSentence[i][1] + wordsOfSentence[i][0]
+      sentenceSplit.append(modifiedWord)
+    elif len(wordsOfSentence[i]) > 2:
+      # Remove the random characters from the start and end and move the last character to the first position
+      modifiedWord = wordsOfSentence[i][3:-3][-1] + wordsOfSentence[i][
+          3:-3][:-1]
+      sentenceSplit.append(modifiedWord)
+
+  decryptedSentence = " ".join(sentenceSplit)
+  return decryptedSentence
+
+
+# Example usage
+message = input("Please enter the message you want to encrypt: ")
+encrypted_message = code(message)
+print("Encrypted Message:", encrypted_message)
+
+decrypted_message = input("Please enter the message you want to decrypt: ")
+original_message = decode(decrypted_message)
+print("Decrypted Message:", original_message)
