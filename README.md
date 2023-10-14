@@ -1,5 +1,5 @@
 ******************************************************************************************************************************************************************************************************************************************************************************
-README file for your GitHub repository for the "Username-Password Project using Python":
+Deatils for "Username-Password Project using python":
 
 This Python project demonstrates the use of various fundamental programming concepts such as variables, conditional statements (if-else), loops (while), break statements, methods, and functions to create a simple username and password validation system. The project simulates a basic login system with multiple validation checks.
 
