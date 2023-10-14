@@ -43,3 +43,14 @@ Contributions to this project are welcome. If you have any improvements or featu
 
 Thank you for using the Username-Password Project using Python. Enjoy exploring and learning from this basic Python project!
 ******************************************************************************************************************************************************************************************************************************************************************************
+>>>>> Details for encryption-decryption project using python
+Message Encryption and Decryption
+
+This simple Python program allows you to encrypt and decrypt messages using a basic substitution cipher. It can be used for educational purposes to understand how text encryption and decryption work.
+
+Features
+
+- **Encryption:** The `code` function takes a message as input and encrypts it using a simple substitution cipher. Single characters are kept as they are, the positions of characters in two-character words are swapped, and longer words are encrypted with random characters at the start and end.
+
+- **Decryption:** The `decode` function reverses the encryption process, allowing you to recover the original message from the encrypted text.
+
