@@ -53,9 +53,9 @@ Features
 
 - **Decryption:** The `decode` function reverses the encryption process, allowing you to recover the original message from the encrypted text.
   ****************************************************************************************************************************************************************************************************************************************************************************
-  >>Here's a README file for quiz game project using python:
+>>Here's a README file for quiz game project using python:
 
-```markdown
+
 General Knowledge Quiz Game
 
 This is a simple Python quiz game that tests your knowledge of general facts and trivia. Players answer questions to win virtual money and see how much they can take home. The game includes questions from various categories, and it's a fun way to challenge your general knowledge.
