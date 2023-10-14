@@ -1,9 +1,6 @@
 ******************************************************************************************************************************************************************************************************************************************************************************
 README file for your GitHub repository for the "Username-Password Project using Python":
 
-```markdown
-Username-Password Project using Python
-
 This Python project demonstrates the use of various fundamental programming concepts such as variables, conditional statements (if-else), loops (while), break statements, methods, and functions to create a simple username and password validation system. The project simulates a basic login system with multiple validation checks.
 
 Project Overview
@@ -19,7 +16,6 @@ Valid Email Domains
 
 The project begins by defining a list of 100 valid email domains. You can add more domains to the list as needed.
 
-```python
 valid_domains = (
     # List of valid email domains (add more if needed)
     "gmail.com",
@@ -27,7 +23,6 @@ valid_domains = (
     "hotmail.com",
     # ...
 )
-```
 
 Usage
 
