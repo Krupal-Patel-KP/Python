@@ -98,8 +98,5 @@ You can choose to quit the game at any time by entering 0. Your earnings at that
 
 Enjoy testing your general knowledge with this quiz game!
 
----
-
-*Note: This game is for entertainment purposes and is not meant for real monetary transactions.*
-```
+Note: This game is for entertainment purposes and is not meant for real monetary transactions.*
 
