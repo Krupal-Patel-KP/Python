@@ -1,0 +1,98 @@
+Questions = [
+    [
+        "What is the largest planet in our solar system?", "Venus", "Mars",
+        "Jupiter", "Saturn", 3
+    ],
+    [
+        "Which gas is most abundant in the Earth's atmosphere?", "Oxygen",
+        "Nitrogen", "Carbon Dioxide", "Argon", 2
+    ], ["What is the chemical symbol for gold?", "Go", "Au", "Gd", "Ag", 2],
+    [
+        "Which country is known as the Land of the Rising Sun?", "China",
+        "India", "Japan", "South Korea", 3
+    ],
+    [
+        "Who wrote the play 'Romeo and Juliet'?", "Charles Dickens",
+        "Jane Austen", "William Shakespeare", "Mark Twain", 3
+    ],
+    ["What is the capital of France?", "Berlin", "Madrid", "Paris", "Rome", 3],
+    [
+        "Which planet is often referred to as the 'Red Planet'?", "Mars",
+        "Venus", "Jupiter", "Saturn", 1
+    ],
+    [
+        "In which year did Christopher Columbus discover America?", "1492",
+        "1517", "1620", "1776", 1
+    ],
+    ["What is the chemical symbol for water?", "H2O", "CO2", "O2", "NaCl", 1],
+    [
+        "Which natural disaster is measured on the Richter scale?", "Tornado",
+        "Earthquake", "Hurricane", "Volcano", 2
+    ],
+    [
+        "What is the largest mammal in the world?", "African Elephant",
+        "Blue Whale", "Giraffe", "Hippopotamus", 2
+    ],
+    [
+        "Which planet is known as the 'Morning Star'?", "Venus", "Mars",
+        "Jupiter", "Saturn", 1
+    ],
+    [
+        "Who is the author of 'To Kill a Mockingbird'?", "George Orwell",
+        "J.K. Rowling", "Harper Lee", "Agatha Christie", 3
+    ],
+    [
+        "What is the national flower of Japan?", "Rose", "Tulip",
+        "Cherry Blossom", "Daisy", 3
+    ],
+    [
+        "In which continent is the Sahara Desert located?", "Africa", "Asia",
+        "North America", "South America", 1
+    ], ["What is the chemical symbol for silver?", "Si", "Sv", "Ag", "Sr", 3]
+]
+
+i = 0
+money = 0
+level = [
+    1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000, 640000,
+    1250000, 2500000, 5000000, 10000000, 70000000
+]
+
+# Loop through the list of questions
+for i in range(len(Questions)):
+  print(Questions[i][0])  # Print the current question
+  # Print answer choices
+  print("1:",
+        Questions[i][1],
+        "2:",
+        Questions[i][2],
+        "3:",
+        Questions[i][3],
+        "4",
+        Questions[i][4],
+        end='\n\n')
+  answer = int(input("Enter your Answer or Press 0 to quit the game"))
+
+  if (answer == Questions[i][5]):
+    print("Correct Answer")
+    if (i >= 4 and i <= 8):
+      money = level[4]
+      print("Your balance is", money)
+    elif (i >= 9 and i <= 14):
+      money = level[9]
+      print("Your balance is", money)
+    elif (i == 15):
+      money = level[15]
+      print("Your balance is", money)
+    else:
+      money = level[i]
+      print("Your balance is", money)
+  elif (answer == 0):
+    print("You quit the game")
+    break
+  else:
+    print("Wrong Answer")
+    break
+
+# Print the final amount the player is taking home
+print("You are taking home $", money, end='\n\n')
