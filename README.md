@@ -1,5 +1,5 @@
-******************************************************************************************************************************************************************************************************************************************************************************
-#Deatils for "Username-Password Project using python":
+
+## Details for "Username-Password Project using python":
 
 This Python project demonstrates the use of various fundamental programming concepts such as variables, conditional statements (if-else), loops (while), break statements, methods, and functions to create a simple username and password validation system. The project simulates a basic login system with multiple validation checks.
 
@@ -42,8 +42,8 @@ Contributions to this project are welcome. If you have any improvements or featu
 
 
 Thank you for using the Username-Password Project using Python. Enjoy exploring and learning from this basic Python project!
-******************************************************************************************************************************************************************************************************************************************************************************
-# Details for encryption-decryption project using python
+
+## Details for encryption-decryption project using python
 
 This simple Python program allows you to encrypt and decrypt messages using a basic substitution cipher. It can be used for educational purposes to understand how text encryption and decryption work.
 
@@ -52,8 +52,8 @@ Features
 - **Encryption:** The `code` function takes a message as input and encrypts it using a simple substitution cipher. Single characters are kept as they are, the positions of characters in two-character words are swapped, and longer words are encrypted with random characters at the start and end.
 
 - **Decryption:** The `decode` function reverses the encryption process, allowing you to recover the original message from the encrypted text.
-  ****************************************************************************************************************************************************************************************************************************************************************************
-#Here's a README file for quiz game project using python:
+  
+## Here's a README file for quiz game project using python:
 
 
 General Knowledge Quiz Game
